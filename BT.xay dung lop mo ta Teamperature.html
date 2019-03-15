@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Do F la:
+<p id ="kq"></p>
+Do K la :
+<p id ="a"></p>
+<script>
+    this.Myteampure = function (celcius) {
+        this.celcius = celcius;
+        this.getFahrenheit = function () {
+            return celcius * 1.8 + 32;
+        };
+        this.getKenvil = function () {
+            return celcius +273;
+        };
+    };
+    let celcius = new Myteampure(25);
+    document.getElementById('kq').innerHTML = celcius.getFahrenheit();
+    document.getElementById('a').innerHTML = celcius.getKenvil();
+</script>
+</body>
+</html>
